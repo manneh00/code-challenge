@@ -1,5 +1,35 @@
 .navigationMenu {
-    background-color: aqua;
+    background-color: #fff;
     height: 87px;
     width: 1180px;
+    grid-row: 1 / 2;
+    grid-column: 1/2;
+    z-index: 2;
+    border-radius: 8px;
+    margin-top: 26px;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template: 1fr / 95px 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.navigationMenu img {
+    margin: 19px 0 19px 23px;
+}
+
+.navigationMenu ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    padding: 0;
+    margin: 0;
+}
+
+.navigationMenu ul li a {
+    color: rgba(0, 27, 78, 1);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
 }

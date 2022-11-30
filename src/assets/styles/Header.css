@@ -1,8 +1,6 @@
 .header {
     display: grid;
-    grid-template-areas: 
-    "navigation"
-    "herobanner";
     grid-template: 1fr / 1fr;
     justify-items: center;
+    
 }
