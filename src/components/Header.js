@@ -9,11 +9,9 @@ const Header = ()=> {
     return (
         <header className="header">
             <NavigationMenuWLogo logo={logo} menu={navMenuList} />
-            <HeroBanner>
-
-            </HeroBanner>
+            <HeroBanner />
         </header>
-    )
+    );
 }
 
 export default Header;
