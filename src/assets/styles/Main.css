@@ -1,0 +1,7 @@
+.main {
+    background-color: azure;
+    display: grid;
+    grid-template: 1fr / 1fr;
+    justify-items: center;
+    height: 726px;
+}
