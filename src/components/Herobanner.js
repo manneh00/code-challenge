@@ -17,7 +17,7 @@ const HeroBanner = () => {
         <div className="heroBanner">
             <img src={backgroundImg} alt="satisfied customers" />
             <div className="heroBannerCTABlock">
-                <span>We Are</span>
+                <span>We are</span>
                 <h1>Improving Outcomes<br/>for Learners Everywhere</h1>
                 <Button className="margin18Right" label="Call to action" onClick={handleCTAButton} type="primary" />
                 <Button label="Learn more" onClick={handleLearnButton} />

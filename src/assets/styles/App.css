@@ -6,11 +6,17 @@ html, body {
     color: #fff;
 }
 
-#root {
+#wrapper {
     display: grid;
     grid-template: 1fr 1fr / 1fr;
 }
 
 .margin18Right {
     margin-right: 18px;
+}
+
+.imgResponsive {
+    height: 100%;
+    width: auto;
+    display: inline-block;
 }
