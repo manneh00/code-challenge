@@ -1,9 +1,10 @@
 button {
     box-sizing: border-box;
     width: 164px;
-    height: 64px;
+    height: 54px;
     color: #fff;
     font-size: 16px;
+    font-weight: 600;
     line-height: 19.2px;
     border-radius: 8px;
     font-family: 'Roboto';

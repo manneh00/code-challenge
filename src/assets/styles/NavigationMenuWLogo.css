@@ -33,3 +33,7 @@
     font-weight: 500;
     line-height: 19.2px;
 }
+
+.navigationMenu ul li a:hover {
+    color: rgba(242, 100, 64, 1);
+}

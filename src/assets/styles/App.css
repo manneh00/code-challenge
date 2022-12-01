@@ -6,6 +6,11 @@ html, body {
     color: #fff;
 }
 
+#root {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+}
+
 .margin18Right {
     margin-right: 18px;
 }
