@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-.navigationMenu img {
+.navigationMenu img.logo {
     margin: 19px 0 19px 23px;
 }
 
@@ -37,6 +37,37 @@
 
 .navigationMenu ul li a:hover {
     color: rgba(242, 100, 64, 1);
+}
+
+.navigationMenu .icon {
+    width: 30px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28.5px;
+    border-radius: 0 8px 8px 0;
+    background-color: beige;
+    position: relative;
+    top: -0.5px;
+    display: none;
+}
+
+.navigationMenu .icon:hover {
+    cursor: pointer;
+}
+
+.navigationMenu .icon div {
+    background-color: black;
+    height: 5px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+
+.mobileNav ul li {
+    padding: 10px 25px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 1210px) {
@@ -64,6 +95,7 @@
     .navigationMenu {
         max-width: 615px;
         grid-template: 1fr / 118px 1fr;
+        justify-items: end;
     }
 
     .navigationMenu .spacer {
@@ -87,7 +119,32 @@
 
     .navigationMenu ul {
         display: none;
+        gap: 10px;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        border-radius: 8px;
+        width: 150px;
+        align-items: center;
+        padding: 10px 0;
+        top: 114px;
+        right: 20px;
+        opacity: 0.9;
     }
+
+    .navigationMenu ul li a {
+        opacity: 1;
+    }
+
+    .mobileNav {
+        display: flex;
+    }
+    
+    .navigationMenu .icon {
+        display: flex;
+    }
+
+    
 }
 
 @media only screen and (max-width: 559px) {
