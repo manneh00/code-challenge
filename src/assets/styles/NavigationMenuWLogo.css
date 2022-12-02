@@ -82,7 +82,7 @@
     }
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 645px) {
     .navigationMenu {
         max-width: 529px;
     }
@@ -93,5 +93,23 @@
 
     .navigationMenu ul {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 559px) {
+    .navigationMenu {
+        max-width: 458px;
+    }
+}
+
+@media only screen and (max-width: 488px) {
+    .navigationMenu {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .navigationMenu {
+        max-width: 353px;
     }
 }

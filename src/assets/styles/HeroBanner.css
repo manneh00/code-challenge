@@ -78,12 +78,30 @@
     }
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 645px) {
     .heroBanner {
         grid-template: 113px 1fr / 1fr 529px 1fr;
     }
     .heroBanner .heroBannerCTABlock {
         margin-top: 30px;
         padding: 0 15px;
+    }
+}
+
+@media only screen and (max-width: 559px) {
+    .heroBanner {
+        grid-template: 113px 1fr / 1fr 458PX 1fr;
+    }
+}
+
+@media only screen and (max-width: 488px) {
+    .heroBanner {
+        grid-template: 113px 1fr / 1fr 400PX 1fr;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .heroBanner {
+        grid-template: 113px 1fr / 1fr 353PX 1fr;
     }
 }

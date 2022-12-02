@@ -44,7 +44,7 @@
     }
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 645px) {
     .firstSection {
         max-width: 529px;
     }

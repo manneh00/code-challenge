@@ -86,16 +86,16 @@
 
 @media only screen and (max-width: 750px) {
     .firstSectionImgContainer, .firstSectionTextContainer {
-        max-height: 228px;
+        max-height: 250px;
     }
     .firstSectionTextContainer {
-        padding: 31px 43px;
+        padding: 25px 25px;
     }
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 645px) {
     .firstSectionTextContainer {
-        padding: 31px 43px;
+        padding: 25px;
         border-radius: 0 0 8px 8px;
         max-height: 228px;
     }
@@ -110,5 +110,8 @@
     .squareCorner {
         top: -143px;
         left: -10px;
+    }
+    .firstSectionTextContainer h2 {
+        margin: .8rem .9rem;
     }
 }

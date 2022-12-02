@@ -28,3 +28,10 @@ button.secondary {
         font-size: 14px
     }
 }
+
+@media only screen and (max-width: 430px) {
+    button {
+        width: 130px;
+        height: 48px;
+    }
+}
