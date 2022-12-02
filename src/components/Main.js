@@ -8,7 +8,7 @@ const Main = ()=> {
         <main className="main">
             <Section columns={2} className="firstSection">
                 <div className="firstSectionImgContainer">
-                    <img className="imgResponsive" src={studyGroup} alt="study group" />
+                    <img loading="lazy" className="imgResponsive" src={studyGroup} alt="study group" />
                 </div>
                 <div className="firstSectionTextContainer">
                     <span>What we do</span>
