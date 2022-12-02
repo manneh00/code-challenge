@@ -43,7 +43,7 @@
 
 @media only screen and (max-width: 1210px) {
     .heroBanner {
-        grid-template: 113px 1fr / 1fr 990px 1fr;
+        grid-template: 113px 1fr / 1fr 987px 1fr;
     }
     .heroBanner .heroBannerCTABlock {
         margin-top: 110px;

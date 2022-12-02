@@ -6,7 +6,7 @@
 
 @media only screen and (max-width: 1210px) {
     .header {
-        grid-template: 113px 1fr / 1fr 990px 1fr;
+        grid-template: 113px 1fr / 1fr 987px 1fr;
     }
 }
 
