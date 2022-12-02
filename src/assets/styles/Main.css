@@ -1,9 +1,8 @@
 .main {
-    background-color: azure;
     display: grid;
     grid-template: 1fr / 1fr;
     justify-items: center;
-    height: 726px;
+    height: fit-content;
 }
 
 .firstSection {
@@ -29,21 +28,21 @@
 .firstSectionTextContainer span {
     color: rgba(187, 220, 236, 1);
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.11rem;
+    line-height: 1.33rem;
 }
 
 .firstSectionTextContainer h2 {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    margin: 21px 0 22px 0;
+    font-size: 1.77rem;
+    line-height: 2.11rem;
+    margin: 1.16rem 0 1.22rem 0;
 }
 
 .firstSectionTextContainer p {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 32px;
+    font-size: 0.88rem;
+    line-height: 1.77rem;
 }
 
 .squareCorner {
@@ -56,4 +55,60 @@
     top: -133px;
     z-index: -1;
     left: -20px;
+}
+
+@media only screen and (max-width: 1210px) {
+    .firstSectionTextContainer {
+        padding: 51px 69.5px;
+    }
+    .firstSectionImgContainer, .firstSectionTextContainer {
+        max-height: 366px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .firstSectionImgContainer, .firstSectionTextContainer {
+        max-height: 311px;
+    }
+    .firstSectionTextContainer {
+        padding: 43px 59px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .firstSectionImgContainer, .firstSectionTextContainer {
+        max-height: 267px;
+    }
+    .firstSectionTextContainer {
+        padding: 37px 50px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .firstSectionImgContainer, .firstSectionTextContainer {
+        max-height: 228px;
+    }
+    .firstSectionTextContainer {
+        padding: 31px 43px;
+    }
+}
+
+@media only screen and (max-width: 559px) {
+    .firstSectionTextContainer {
+        padding: 31px 43px;
+        border-radius: 0 0 8px 8px;
+        max-height: 228px;
+    }
+    .firstSectionImgContainer img {
+        width: 100%;
+        height: auto;
+    }
+    .firstSectionImgContainer {
+        border-radius: 8px 8px 0 0;
+        max-height: 228px;
+    }
+    .squareCorner {
+        top: -143px;
+        left: -10px;
+    }
 }

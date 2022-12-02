@@ -1,6 +1,35 @@
 .header {
     display: grid;
-    grid-template: 1fr / 1fr;
-    justify-items: center;
-    
+    grid-template: 1fr / 1fr 1180px 1fr;
+    height: fit-content;
+}
+
+@media only screen and (max-width: 1210px) {
+    .header {
+        grid-template: 113px 1fr / 1fr 990px 1fr;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        grid-template: 113px 1fr / 1fr 840px 1fr;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .header {
+        grid-template: 113px 1fr / 1fr 721px 1fr;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .header {
+        grid-template: 113px 1fr / 1fr 615px 1fr;
+    }
+}
+
+@media only screen and (max-width: 559px) {
+    .header {
+        grid-template: 113px 1fr / 1fr 529px 1fr;
+    }
 }

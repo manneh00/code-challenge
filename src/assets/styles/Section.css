@@ -1,7 +1,8 @@
 .section {
     
     height: 437px;
-    width: 1180px;
+    max-width: 1180px;
+    width: 100%;
 }
 
 .col-1 {
@@ -17,4 +18,39 @@
 .col-3 {
     display: grid;
     grid-template: 1fr / repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 1210px) {
+    .firstSection {
+        max-width: 990px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .firstSection {
+        max-width: 840px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .firstSection {
+        max-width: 721px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .firstSection {
+        max-width: 615px;
+    }
+}
+
+@media only screen and (max-width: 559px) {
+    .firstSection {
+        max-width: 529px;
+    }
+
+    .firstSection > div:first-of-type {
+        grid-template: 1fr 1fr / 1fr;
+        padding: 0 15px;
+    } 
 }

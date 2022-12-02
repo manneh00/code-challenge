@@ -7,7 +7,8 @@ const NavigationMenuWLogo = (props) => {
 
     return(
         <nav className="navigationMenu">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="wgulabs logo" />
+            <div className="spacer"></div>
             <ul>
                 {menu.map((menuItem, index) => {
                     return (<li key={index}>
@@ -15,6 +16,7 @@ const NavigationMenuWLogo = (props) => {
                     </li>);
                 })}
             </ul>
+            <div className="spacer"></div>
         </nav>
     );
 }
