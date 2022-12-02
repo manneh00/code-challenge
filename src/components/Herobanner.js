@@ -23,7 +23,7 @@ const HeroBanner = () => {
 
     return (
         <div className="heroBanner">
-            {/* <img src={backgroundImg} alt="satisfied customers" /> */}
+            
             <picture>
                 <source media="(max-width:1440px)" srcSet={backgroundImg1440} />
                 <source media="(max-width:1210px)" srcSet={backgroundImg1210} />
