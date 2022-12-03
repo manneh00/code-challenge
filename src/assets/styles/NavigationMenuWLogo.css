@@ -124,13 +124,21 @@
         max-width: 987px;
     }
     .navigationMenu ul li a {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
     .navigationMenu {
         max-width: 840px;
+    }
+
+    .navigationMenu ul li a {
+        font-size: 16px
+    }
+
+    .navigationMenu ul li a::before {
+        font-size: 16px;
     }
 }
 
@@ -185,6 +193,7 @@
     .navigationMenu ul li a {
         opacity: 1;
     }
+
 
     .mobileNav {
         display: flex;
