@@ -16,6 +16,7 @@ const NavigationMenuWLogo = (props) => {
     }
 
     const displayFlex = openMobileNav ? "displayFlex" : "";
+    const mobileNavState = openMobileNav ? "open" : "closed";
 
     return(
         <nav className="navigationMenu">
@@ -23,16 +24,22 @@ const NavigationMenuWLogo = (props) => {
             <div className="spacer"></div>
 
             <div className="">
-                <div className="icon" onClick={handleOpenMobileNav}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div className={`icon ${mobileNavState}`} onClick={handleOpenMobileNav}>
+                    <div className="barOne"></div>
+                    <div className="barTwo"></div>
+                    <div className="barThree"></div>
                 </div>
 
                 <ul className={displayFlex}>
                     {menu.map((menuItem, index) => {
                         return (<li key={index}>
-                            <a onClick={handleMenuClick} href={menuItem.link}>{menuItem.text}</a>
+                            <a 
+                                data-hover={menuItem.text}
+                                onClick={handleMenuClick} 
+                                href={menuItem.link}
+                            >
+                                {menuItem.text}
+                            </a>
                         </li>);
                     })}
                 </ul>

@@ -28,15 +28,36 @@
 }
 
 .navigationMenu ul li a {
-    color: rgba(0, 27, 78, 1);
+    color: rgba(0, 27, 78, 0);
     text-decoration: none;
     font-size: 0.88rem;
     font-weight: 500;
     line-height: 19.2px;
+    transition: all 200ms ease-out;
+    display: inline-block;
+    height: 19.2px;
 }
 
 .navigationMenu ul li a:hover {
     color: rgba(242, 100, 64, 1);
+    
+}
+
+.navigationMenu ul li a:hover::before {
+    transform: scale(0.9);
+    color: rgba(0, 27, 78, 0);
+}
+
+.navigationMenu ul li a::before {
+    /* opacity: 0; */
+    color: rgba(0, 27, 78, 1);
+    content: attr(data-hover);
+    position: absolute;
+    transition: all 200ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 19.2px;
+    box-sizing: border-box;
 }
 
 .navigationMenu .icon {
@@ -63,6 +84,33 @@
     border-radius: 5px;
 }
 
+.barOne, .barTwo, .barThree {
+    transition: all 200ms ease-in-out;
+}
+
+.navigationMenu .icon.open div.barOne {
+    transform: rotate(45deg) translate(9px, 9px)
+}
+
+.navigationMenu .icon.open div.barTwo {
+    opacity: 0;
+}
+
+.navigationMenu .icon.open div.barThree {
+    transform: rotate(-45deg) translate(9px, -9px);
+}
+
+.navigationMenu .icon.closed div.barOne {
+    transform: rotate(0);
+}
+
+.navigationMenu .icon.closed div.barTwo {
+    transform: rotate(0);
+}
+
+.navigationMenu .icon.closed div.barThree {
+    
+}
 
 
 .mobileNav ul li {
