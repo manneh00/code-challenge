@@ -93,6 +93,7 @@
 }
 
 .navigationMenu .icon.open div.barTwo {
+    transform: translateX(20px);
     opacity: 0;
 }
 
