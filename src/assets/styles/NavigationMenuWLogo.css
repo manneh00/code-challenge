@@ -175,6 +175,14 @@
         opacity: 0.9;
     }
 
+    .navigationMenu ul li {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .navigationMenu ul li a {
         opacity: 1;
     }
