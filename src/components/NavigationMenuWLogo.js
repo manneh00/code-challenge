@@ -11,11 +11,11 @@ const NavigationMenuWLogo = (props) => {
         setOpenMobileNav(!openMobileNav);
     }
 
-    const handleMenuClick = () => {
-        setOpenMobileNav(false);
+    const handleMenuClick = (e) => {
+        //const {href} = e.target.children[0];
+        setTimeout(() => setOpenMobileNav(false), 200);
     }
 
-    const displayFlex = openMobileNav ? "displayFlex" : "";
     const mobileNavState = openMobileNav ? "open" : "closed";
 
     return(
@@ -30,12 +30,11 @@ const NavigationMenuWLogo = (props) => {
                     <div className="barThree"></div>
                 </div>
 
-                <ul className={displayFlex}>
+                <ul>
                     {menu.map((menuItem, index) => {
-                        return (<li key={index}>
+                        return (<li key={index} onClick={handleMenuClick} > 
                             <a 
                                 data-hover={menuItem.text}
-                                onClick={handleMenuClick} 
                                 href={menuItem.link}
                             >
                                 {menuItem.text}
