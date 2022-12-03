@@ -40,7 +40,6 @@
 
 .navigationMenu ul li a:hover {
     color: rgba(242, 100, 64, 1);
-    
 }
 
 .navigationMenu ul li a:hover::before {
@@ -49,7 +48,6 @@
 }
 
 .navigationMenu ul li a::before {
-    /* opacity: 0; */
     color: rgba(0, 27, 78, 1);
     content: attr(data-hover);
     position: absolute;
@@ -100,19 +98,6 @@
 .navigationMenu .icon.open div.barThree {
     transform: rotate(-45deg) translate(9px, -9px);
 }
-
-.navigationMenu .icon.closed div.barOne {
-    transform: rotate(0);
-}
-
-.navigationMenu .icon.closed div.barTwo {
-    transform: rotate(0);
-}
-
-.navigationMenu .icon.closed div.barThree {
-    
-}
-
 
 .mobileNav ul li {
     padding: 10px 25px;
@@ -202,8 +187,6 @@
     .navigationMenu .icon {
         display: flex;
     }
-
-    
 }
 
 @media only screen and (max-width: 559px) {
