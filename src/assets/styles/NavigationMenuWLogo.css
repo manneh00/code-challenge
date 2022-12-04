@@ -155,12 +155,12 @@
         gap: 10px;
         flex-direction: column;
         position: absolute;
-        background-color: white;
+        background-color: beige;
         border-radius: 8px;
         align-items: center;
         padding: 10px 0;
         top: 114px;
-        opacity: 0.9;
+        opacity: 1;
         right: 0px;
         width: calc(100% - 40px);
         margin: 0 20px;
