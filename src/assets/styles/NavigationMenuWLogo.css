@@ -188,10 +188,12 @@
         background-color: white;
         border: 1px solid black;
         transform: scale(1.05);
+        border-radius: 8px;
     }
 
     .navigationMenu ul li a {
         opacity: 0;
+        transition: opacity 150ms ease-in 150ms;
     }
 
     .navigationMenu .open + ul li a {
