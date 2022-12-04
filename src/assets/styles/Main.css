@@ -99,6 +99,10 @@
         border-radius: 0 0 8px 8px;
         max-height: 228px;
     }
+
+    .firstSectionTextContainer p {
+        font-size: 1rem;
+    }
     .firstSectionImgContainer img {
         width: 100%;
         height: auto;
