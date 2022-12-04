@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Section from './Section';
 import studyGroup from '../assets/images/study-group.png';
+import studyGroupWebp from '../assets/images/study-group.webp';
 import '../assets/styles/Main.css';
 
 const Main = ()=> {
@@ -8,7 +9,11 @@ const Main = ()=> {
         <main className="main">
             <Section columns={2} className="firstSection">
                 <div className="firstSectionImgContainer">
-                    <img loading="lazy" className="imgResponsive" src={studyGroup} alt="study group" />
+                    <picture>
+                        <source srcSet={studyGroupWebp} type="image/webp" />
+                        <img loading="lazy" className="imgResponsive" src={studyGroup} alt="study group" />
+                    </picture>
+                    
                 </div>
                 <div className="firstSectionTextContainer">
                     <span>What we do</span>
