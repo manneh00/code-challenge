@@ -133,7 +133,7 @@
 @media only screen and (max-width: 750px) {
     .navigationMenu {
         grid-template: 1fr / 118px 1fr;
-        justify-items: end;
+        
     }
 
     .navigationMenu .spacer {
@@ -146,6 +146,9 @@
 }
 
 @media only screen and (max-width: 645px) {
+    .navigationMenu {
+        justify-items: end;
+    }
     .navigationMenu .spacer {
         display: none;
     }
