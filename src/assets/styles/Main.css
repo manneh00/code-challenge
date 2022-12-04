@@ -1,6 +1,6 @@
 .main {
     display: grid;
-    grid-template: 1fr / 1fr;
+    grid-template: 1fr / clamp(20px, 120px, 200px) 1fr clamp(20px, 120px, 200px);
     justify-items: center;
     height: fit-content;
 }
@@ -9,6 +9,9 @@
     position: relative;
     top: -34px;
     z-index: 4;
+    max-width: 100%;
+    grid-row: 1/2;
+    grid-column: 2/3;
 }
 
 .firstSectionImgContainer {
@@ -59,6 +62,7 @@
 }
 
 @media only screen and (max-width: 1210px) {
+    
     .firstSectionTextContainer {
         padding: 51px 69.5px;
     }
@@ -67,7 +71,16 @@
     }
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1210px) {
+    .main .section .col-2 {
+        grid-template: 1fr / 1fr 1.5fr;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
+    .main {
+        grid-template: 1fr / clamp(20px, 40px, 200px) 1fr clamp(20px, 40px, 200px);
+    }
     .firstSectionImgContainer, .firstSectionTextContainer {
         max-height: 311px;
     }
@@ -77,6 +90,10 @@
 }
 
 @media only screen and (max-width: 880px) {
+    .main {
+        grid-template: clamp(20px, 120px, 200px) 1fr clamp(20px, 120px, 200px);
+    }
+    
     .firstSectionImgContainer, .firstSectionTextContainer {
         max-height: 267px;
     }
@@ -86,6 +103,9 @@
 }
 
 @media only screen and (max-width: 750px) {
+    .main {
+        grid-template: 1fr / 20px 1fr 20px;
+    }
     .firstSectionImgContainer, .firstSectionTextContainer {
         max-height: 250px;
     }
