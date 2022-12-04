@@ -4,9 +4,8 @@
     grid-column: 1/4;
     z-index: 1;
     display: grid;
-    grid-template: 113px 1fr / 1fr 1180px 1fr;
+    grid-template: 113px 1fr / clamp(20px, 120px, 200px) 1fr clamp(20px, 120px, 200px);
     background: linear-gradient(75.92deg, rgba(0, 27, 78, 0.8) 39.41%, rgba(0, 27, 78, 0.56) 100.22%);
-
 }
 
 .heroBanner picture {
@@ -25,7 +24,6 @@
     max-height: 500px;
 }
 
-
 .heroBanner .heroBannerCTABlock span {
     color: rgba(52, 165, 219, 1);
     font-size: 1.33rem;
@@ -40,69 +38,22 @@
     margin: 10px 0 20px 0;
 }
 
-
-
 @media only screen and (max-width: 1210px) {
-    .heroBanner {
-        grid-template: 113px 1fr / 1fr 987px 1fr;
-    }
     .heroBanner .heroBannerCTABlock {
         margin-top: 110px;
         margin-bottom: 110px;
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .heroBanner {
-        grid-template: 113px 1fr / 1fr 840px 1fr;
-    }
-    .heroBanner .heroBannerCTABlock {
-        margin-top: 90px;
-    }
-}
-
-@media only screen and (max-width: 880px) {
-    .heroBanner {
-        grid-template: 113px 1fr / 1fr 721px 1fr;
-    }
-    .heroBanner .heroBannerCTABlock {
-        margin-top: 70px;
-    }
-}
-
 @media only screen and (max-width: 750px) {
     .heroBanner {
-        grid-template: 113px 1fr / 1fr 615px 1fr;
+        grid-template: 113px 1fr / 20px 1fr 20px;
     }
-    .heroBanner .heroBannerCTABlock {
-        margin-top: 50px;
-    }
+    
 }
 
 @media only screen and (max-width: 645px) {
-    .heroBanner {
-        grid-template: 113px 1fr / 1fr 529px 1fr;
-    }
     .heroBanner .heroBannerCTABlock {
-        margin-top: 30px;
         padding: 0 15px;
-    }
-}
-
-@media only screen and (max-width: 559px) {
-    .heroBanner {
-        grid-template: 113px 1fr / 1fr 458PX 1fr;
-    }
-}
-
-@media only screen and (max-width: 488px) {
-    .heroBanner {
-        grid-template: 113px 1fr / 1fr 400PX 1fr;
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    .heroBanner {
-        grid-template: 113px 1fr / 1fr 353PX 1fr;
     }
 }

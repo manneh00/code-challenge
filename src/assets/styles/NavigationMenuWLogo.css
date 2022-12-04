@@ -10,7 +10,7 @@
     margin-top: 26px;
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
     display: grid;
-    grid-template: 1fr / 118px minmax(0px, 195px) 554px minmax(0px, 313px);
+    grid-template: 1fr / 118px minmax(0px, 195px) clamp(200px, 554px, 554px) minmax(0px, 313px);
     align-items: center;
 }
 
@@ -22,7 +22,7 @@
     list-style: none;
     gap: 48px;
     padding: 0;
-    margin: auto;
+    margin: 0 20px;
     display: grid;
     grid-template: 1fr / repeat(6,1fr);
 }
@@ -105,18 +105,18 @@
 }
 
 @media only screen and (max-width: 1210px) {
-    .navigationMenu {
+    /* .navigationMenu {
         max-width: 987px;
-    }
+    } */
     .navigationMenu ul li a {
         font-size: 16px;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .navigationMenu {
+    /* .navigationMenu {
         max-width: 840px;
-    }
+    } */
 
     .navigationMenu ul li a {
         font-size: 16px
@@ -125,19 +125,15 @@
     .navigationMenu ul li a::before {
         font-size: 16px;
     }
-}
-
-@media only screen and (max-width: 880px) {
-    .navigationMenu {
-        max-width: 721px;
+    .navigationMenu ul {
+        gap: 20px;
     }
 }
 
 @media only screen and (max-width: 750px) {
     .navigationMenu {
-        max-width: 615px;
         grid-template: 1fr / 118px 1fr;
-        justify-items: center;
+        justify-items: end;
     }
 
     .navigationMenu .spacer {
@@ -145,17 +141,11 @@
     }
 
     .navigationMenu ul {
-        gap: 20px;
         grid-template: 1fr / repeat(6,auto);
     }
 }
 
 @media only screen and (max-width: 645px) {
-    .navigationMenu {
-        max-width: 529px;
-        justify-items: end;
-    }
-
     .navigationMenu .spacer {
         display: none;
     }
@@ -215,23 +205,5 @@
     
     .navigationMenu .icon {
         display: flex;
-    }
-}
-
-@media only screen and (max-width: 559px) {
-    .navigationMenu {
-        max-width: 458px;
-    }
-}
-
-@media only screen and (max-width: 488px) {
-    .navigationMenu {
-        max-width: 400px;
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    .navigationMenu {
-        max-width: 353px;
     }
 }
