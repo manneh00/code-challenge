@@ -15,6 +15,7 @@
     border-radius: 8px 0 0 8px;
     overflow: hidden;
     max-height: 437px;
+    background-color: rgba(19, 129, 147, 1);
 }
 
 .firstSectionTextContainer {
@@ -97,7 +98,7 @@
     .firstSectionTextContainer {
         padding: 25px;
         border-radius: 0 0 8px 8px;
-        max-height: 228px;
+        max-height: fit-content;
     }
 
     .firstSectionTextContainer p {
