@@ -9,6 +9,7 @@ import backgroundImg645 from '../assets/images/happy-customer-hero-banner-645.pn
 import backgroundImg559 from '../assets/images/happy-customer-hero-banner-559.png';
 import backgroundImg488 from '../assets/images/happy-customer-hero-banner-488.png';
 import backgroundImg430 from '../assets/images/happy-customer-hero-banner-430.png';
+import backgroundImg1440Webp from '../assets/images/happy-customer-hero-banner-1440.webp';
 import Button from './Button';
 
 const HeroBanner = () => {
@@ -21,11 +22,15 @@ const HeroBanner = () => {
         e.preventDefault();
     }
 
+    // const images = [
+    //     {media: 'max-width', }
+    // ]
+
     return (
         <div className="heroBanner">
             
             <picture>
-                <source media="(max-width:1440px)" srcSet={backgroundImg1440} />
+                <source media="(max-width:1440px)" srcSet={backgroundImg1440Webp} type="image/webp" />
                 <source media="(max-width:1210px)" srcSet={backgroundImg1210} />
                 <source media="(max-width:1024px)" srcSet={backgroundImg1024} />
                 <source media="(min-width:880px)" srcSet={backgroundImg880} />
