@@ -45,6 +45,12 @@
     }
 }
 
+@media only screen and (max-width: 1024px) {
+    .heroBanner {
+        grid-template: 113px 1fr / clamp(20px, 40px, 200px) 1fr clamp(20px, 40px, 200px);
+    }
+}
+
 @media only screen and (max-width: 750px) {
     .heroBanner {
         grid-template: 113px 1fr / 20px 1fr 20px;
